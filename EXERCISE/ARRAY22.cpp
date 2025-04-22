@@ -71,12 +71,12 @@ void Search()
     cout<<"2.Search By Name."<<endl;
     cout<<"3.Search By Position."<<endl;
     cout<<"4.Search By Salary."<<endl;
-    cout<<"Please Choose Option:";cin>>options;
+    cout<<"Please Choose Option: ";cin>>options;
     switch(options)
     {
             case 1 :
             {
-                cout<<"Please Enter What you want to choose :";cin>>Search_ID;
+                cout<<"Please Enter What you want to choose : ";cin>>Search_ID;
                 for(int i=0;i<Size_Employee;i++){
                     if(Employee_ID[i]==Search_ID){
                         cout<<"ID:"<<Employee_ID[i]<<endl;
