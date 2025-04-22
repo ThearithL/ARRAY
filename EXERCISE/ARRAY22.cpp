@@ -20,7 +20,7 @@ void Create()
         cout<<"Enter Birthday: ";cin>>Employee_Birthday[i];
         cout<<"Enter Address: ";cin.ignore();getline(cin,Employee_Address[i]);
         cout<<"Enter Phone Number: ";cin>>Employee_Phone_Number[i];
-        cout<<"Enter Email: ";cin.ignore();getline(cin,Employee_Email[i]);
+        cout<<"Enter Email: ";cin>>Employee_Email[i];
         cout<<"Enter Status(Active,Inactive): ";cin>>Employee_Status[i];
         cout<<"Enter Level(Manager,Superviser,Employee): ";cin>>Employee_Level[i];
         cout<<"Enter Marital Status(Single,Married,Divorced,Windowed): ";cin>>Employee_Marital_Status[i];
