@@ -28,7 +28,7 @@ void Create()
 }
 void Display()
 {
-    cout<<"=============================================================================================================================================================================="<<endl; 
+    cout<<"==========================================================================================================================================================================="<<endl; 
     cout<<left;
     cout << setw(10) << "NAME"
          << setw(10) << "ID"
@@ -43,7 +43,7 @@ void Display()
          << setw(10) << "LEVEL"
          << setw(10) << "MARITAL STATUS" 
         <<endl;
-    cout<<"=============================================================================================================================================================================="<<endl;
+    cout<<"==========================================================================================================================================================================="<<endl;
     cout<<left;   
     for(int i=0;i<Size_Employee;i++){
         cout<<setw(10)<<Employee_Name[i]
@@ -60,7 +60,7 @@ void Display()
             <<setw(10)<<Employee_Marital_Status[i]
             <<endl;
     }
-    cout<<"=============================================================================================================================================================================="<<endl;
+    cout<<"==========================================================================================================================================================================="<<endl;
 }
 void Search()
 {
@@ -71,12 +71,12 @@ void Search()
     cout<<"2.Search By Name."<<endl;
     cout<<"3.Search By Position."<<endl;
     cout<<"4.Search By Salary."<<endl;
-    cout<<"Please Choose Option: ";cin>>options;
+    cout<<"Please Choose Option:";cin>>options;
     switch(options)
     {
             case 1 :
             {
-                cout<<"Please Enter What you want to choose : ";cin>>Search_ID;
+                cout<<"Please Enter What you want to choose :";cin>>Search_ID;
                 for(int i=0;i<Size_Employee;i++){
                     if(Employee_ID[i]==Search_ID){
                         cout<<"ID:"<<Employee_ID[i]<<endl;
@@ -134,8 +134,28 @@ void Search()
                 }
                     
             }
-            break;
+    
         }
+        break;
+        case 4 :{
+            cout<<"Please Enter Salary:";cin>>Search_Salary;
+            for(int i=0;i<Size_Employee;i++){
+                if(Employee_Salary[i]==Search_Salary){
+                    cout<<"ID:"<<Employee_ID[i]<<endl;
+                    cout<<"Name:"<<Employee_Name[i]<<endl;
+                    cout<<"Position:"<<Employee_Position[i]<<endl;
+                    cout<<"Salary:"<<Employee_Salary[i]<<endl;
+                    cout<<"Department:"<<Employee_Department[i]<<endl;
+                    cout<<"Birthday:"<<Employee_Birthday[i]<<endl;
+                    cout<<"Address:"<<Employee_Address[i]<<endl;
+                    cout<<"Phone Number:"<<Employee_Phone_Number[i]<<endl;
+                    cout<<"Status:"<<Employee_Status[i]<<endl;
+                    cout<<"Level:"<<Employee_Level[i]<<endl;
+                    cout<<"Marital Status:"<<Employee_Marital_Status[i]<<endl;
+                }
+            }
+        }
+        break;
         
     }
 }
@@ -477,7 +497,7 @@ int main()
     system("cls");
     int Menu;
     do{
-        cout<<BLUE<<"============================================================================== [ MENU ] ======================================================================================="<<endl;
+        cout<<BLUE<<"============================================================================== [ MENU ] ==================================================================================="<<endl;
         cout<<"1.Create Employee."<<endl;
         cout<<"2.Display All Employee."<<endl;
         cout<<"3.Search Employee."<<endl;
@@ -490,7 +510,7 @@ int main()
         switch(Menu)
         {
             case 0 :{
-                cout<<GREEN<<"============================================================== [ Exit The Program. ] ==============================================================================="<<RESET<<endl;
+                cout<<GREEN<<"============================================================== [ Exit The Program. ] ============================================================================="<<RESET<<endl;
                 break;
             }
             case 1 :{
